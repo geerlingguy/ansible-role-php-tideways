@@ -1,3 +1,23 @@
+- name: Define xhprof_download_url.
+  set_fact:
+    xhprof_download_url: "{{ __tideways_xhprof_download_url }}"
+  when: xhprof_download_url is not defined
+
+- name: Define xhprof_download_folder_name.
+  set_fact:
+    xhprof_download_folder_name: "{{ __tideways_xhprof_download_folder_name }}"
+  when: xhprof_download_folder_name is not defined
+
+- name: Define php_xhprof_lib_dir.
+  set_fact:
+    php_xhprof_lib_dir: "{{ __php_xhprof_lib_dir }}"
+  when: php_xhprof_lib_dir is not defined
+
+- name: Define php_xhprof_html_dir.
+  set_fact:
+    php_xhprof_html_dir: "{{ __php_xhprof_html_dir }}"
+  when: php_xhprof_html_dir is not defined
+
 - name: Ensure dependencies for the XHProf UI are present.
   package: "name={{ item }} state=installed"
   with_items:
