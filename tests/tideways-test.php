@@ -19,9 +19,6 @@ else {
   $success = FALSE;
 }
 
-include $xhprof_root_dir . '/xhprof_lib/utils/xhprof_lib.php';
-include $xhprof_root_dir . '/xhprof_lib/utils/xhprof_runs.php';
-
 if (!$success) {
   exit(1);
 }

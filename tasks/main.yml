@@ -19,7 +19,6 @@
     - make
     - gcc
     - unzip
-    - graphviz
 
 - name: Download and untar Tideways.
   unarchive:
