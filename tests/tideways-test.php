@@ -23,9 +23,9 @@ else {
 include $xhprof_root_dir . '/xhprof_lib/utils/xhprof_lib.php';
 include $xhprof_root_dir . '/xhprof_lib/utils/xhprof_runs.php';
 
-$xhprof_runs = new XHProfRuns_Default();
-$run_id = $xhprof_runs->save_run($data, 'xhprof_testing');
 $output_dir = sys_get_temp_dir();
+$xhprof_runs = new XHProfRuns_Default($output_dir);
+$run_id = $xhprof_runs->save_run($data, 'xhprof_testing');
 $filename = "$output_dir/$run_id.xhprof_testing.xhprof";
 if (file_exists($filename)) {
   print "XHProf PHP library writing to output directory.\r\n";
