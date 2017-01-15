@@ -58,3 +58,5 @@
 # $ cp Tideways.php /path/to/php/lib
 
 - include: configure.yml
+- include: xhprof.yml
+  when: tideways_install_xhprof_ui
