@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/geerlingguy/ansible-role-php-tideways.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-php-tideways)
 
-Installs the [Tideways PHP Profile Extension](https://github.com/tideways/php-profiler-extension) on Linux servers.
+Installs the [Tideways PHP Profile Extension](https://github.com/tideways/php-xhprof-extension) on Linux servers.
 
 ## Requirements
 
@@ -16,8 +16,8 @@ Available variables are listed below, along with default values (see `defaults/m
 
 Where Tideways setup files will be downloaded and built.
 
-    tideways_download_url: https://github.com/tideways/php-profiler-extension/archive/master.zip
-    tideways_download_folder_name: php-profiler-extension-master
+    tideways_download_url: https://github.com/tideways/php-xhprof-extension/archive/master.zip
+    tideways_download_folder_name: php-xhprof-extension-master
 
 The URL from which Tideways will be downloaded.
 
