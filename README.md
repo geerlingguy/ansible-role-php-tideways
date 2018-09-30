@@ -25,7 +25,7 @@ The URL from which Tideways will be downloaded.
 
 If you use the Tideways UI, set this variable to your API key. Otherwise the extension can be used along with the XHProf UI to view profiles.
 
-    tideways_install_xhprof_ui: yes
+    tideways_install_xhprof_ui: true
 
 Tideways data-format is 100% compatible with XHProf so you can use the XHProf UI to browse profiles reports and the `XHProfRuns_Default` class to write the profile data to disk. If you use the Tideways UI, set this variable to `no`.
 
