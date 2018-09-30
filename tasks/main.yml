@@ -28,7 +28,7 @@
     creates: "{{ workspace }}/{{ tideways_download_folder_name }}"
 
 - name: Build Tideways.
-  shell: >
+  command: >
     {{ item }}
     chdir={{ workspace }}/{{ tideways_download_folder_name }}
     creates={{ workspace }}/{{ tideways_download_folder_name }}/modules/tideways_xhprof.so
@@ -48,7 +48,7 @@
     mode: 0755
 
 - name: Move Tideways module into place.
-  shell: >
+  command: >
     cp {{ workspace }}/{{ tideways_download_folder_name }}/modules/tideways_xhprof.so
     {{ php_tideways_module_path }}/tideways_xhprof.so
     creates={{ php_tideways_module_path }}/tideways_xhprof.so
