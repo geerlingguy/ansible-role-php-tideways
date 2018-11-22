@@ -18,9 +18,12 @@ Where Tideways setup files will be downloaded and built.
 
     tideways_download_url: https://github.com/tideways/php-xhprof-extension/archive/master.zip
     tideways_download_folder_name: php-xhprof-extension-master
+
+The URL from which Tideways will be downloaded, and the resulting folder into which it is downloaded.
+
     tideways_extension_name: tideways_xhprof.so
 
-The URL from which Tideways will be downloaded.
+The extension name for the Tideways PHP extension.
 
     tideways_api_key: ''
 
