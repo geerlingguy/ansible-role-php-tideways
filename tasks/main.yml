@@ -31,7 +31,7 @@
   command: >
     {{ item }}
     chdir={{ workspace }}/{{ tideways_download_folder_name }}
-    creates={{ workspace }}/{{ tideways_download_folder_name }}/modules/tideways_xhprof.so
+    creates={{ workspace }}/{{ tideways_download_folder_name }}/modules/{{ tideways_extension_name }}
   with_items:
     - phpize
     - ./configure
@@ -49,9 +49,9 @@
 
 - name: Move Tideways module into place.
   command: >
-    cp {{ workspace }}/{{ tideways_download_folder_name }}/modules/tideways_xhprof.so
-    {{ php_tideways_module_path }}/tideways_xhprof.so
-    creates={{ php_tideways_module_path }}/tideways_xhprof.so
+    cp {{ workspace }}/{{ tideways_download_folder_name }}/modules/{{ tideways_extension_name }}
+    {{ php_tideways_module_path }}/{{ tideways_extension_name }}
+    creates={{ php_tideways_module_path }}/{{ tideways_extension_name }}
   notify: restart webserver
 
 # TODO - Install the Tideways.php file for UI?
