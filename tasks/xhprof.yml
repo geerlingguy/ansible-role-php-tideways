@@ -32,12 +32,12 @@
     creates: "{{ workspace }}/{{ xhprof_download_folder_name }}"
 
 - name: Move XHProf PHP library into place.
-  shell: >
+  command: >
     cp -r {{ workspace }}/{{ xhprof_download_folder_name }}/xhprof_lib {{ php_xhprof_lib_dir }}
     creates={{ php_xhprof_lib_dir }}/utils/xhprof_lib.php
 
 - name: Move XHProf UI into place.
-  shell: >
+  command: >
     cp -r {{ workspace }}/{{ xhprof_download_folder_name }}/xhprof_html {{ php_xhprof_html_dir }}
     creates={{ php_xhprof_html_dir }}/index.php
 
