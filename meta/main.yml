@@ -3,7 +3,8 @@ dependencies:
   - geerlingguy.php
 
 galaxy_info:
-  role_name: php-tideways
+  # See: https://github.com/ansible/galaxy/issues/2393
+  # role_name: php-tideways
   author: geerlingguy
   description: Tideways PHP Profiler Extension for Linux
   company: "Midwestern Mac, LLC"
