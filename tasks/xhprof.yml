@@ -30,6 +30,7 @@
     dest: "{{ workspace }}"
     copy: false
     creates: "{{ workspace }}/{{ xhprof_download_folder_name }}"
+    mode: 0755
 
 - name: Move XHProf PHP library into place.
   command: >
