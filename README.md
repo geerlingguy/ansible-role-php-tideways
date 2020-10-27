@@ -1,6 +1,6 @@
 # Ansible Role: PHP-Tideways
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-php-tideways.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-php-tideways)
+[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-php-tideways.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-php-tideways)
 
 Installs the [Tideways PHP Profile Extension](https://github.com/tideways/php-xhprof-extension) on Linux servers.
 
