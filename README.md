@@ -1,4 +1,6 @@
-# Ansible Role: PHP-Tideways
+# DEPRECATED Ansible Role: PHP-Tideways
+
+> **DEPRECATED**: This Ansible role is no longer maintained and has been deprecated.
 
 [![CI](https://github.com/geerlingguy/ansible-role-php-tideways/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-php-tideways/actions?query=workflow%3ACI)
 
